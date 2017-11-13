@@ -17,12 +17,6 @@ logging:
 mybatis:
   mapperLocations: classpath:sqlmapper/*.xml
 
-pagehelper:
-  helperDialect: mysql
-  reasonable: true
-  supportMethodsArguments: true
-  params: count=countSql
-
 flyway:
   baseline-on-migrate: true
   baseline-version: 1
