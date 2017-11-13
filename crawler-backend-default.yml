@@ -1,22 +1,17 @@
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
 
+flyway:
+  baseline-on-migrate: true
+  baseline-version: 1
+  locations:
+    classpath:db/migrations
+  sql-migration-prefix: V
+  sql-migration-suffix: .sql
+  encoding: UTF-8
 
-#logging:
-#  config: classpath:logback-crawler.xml
-#
-#mybatis:
-#  mapperLocations: classpath:sqlmapper/*.xml
-#
-#pagehelper:
-#  helperDialect: mysql
-#  reasonable: true
-#  supportMethodsArguments: true
-#  params: count=countSql
-#
-#flyway:
-#  baseline-on-migrate: true
-#  baseline-version: 1
-#  locations:
-#    classpath:db/migrations
-#  sql-migration-prefix: V
-#  sql-migration-suffix: .sql
-#  encoding: UTF-8
+logging:
+  config: classpath:logback-crawler.xml
